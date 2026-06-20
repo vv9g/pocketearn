@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PocketEarn</title>
+    <!-- Import Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-primary: #818cf8; /* Indigo */
+            --accent-secondary: #a78bfa; /* Violet */
+            --glow-color: rgba(129, 140, 248, 0.15);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --success: #34d399;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header section with brand logo and main title */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(129, 140, 248, 0.4);
+        }
+
+        .logo-icon svg {
+            width: 26px;
+            height: 26px;
+            fill: #ffffff;
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .date {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: 8px;
+            font-weight: 300;
+        }
+
+        /* Badges for trust signals */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            border-color: var(--accent-primary);
+            background: rgba(129, 140, 248, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--success);
+        }
+
+        /* Main policy card */
+        .policy-card {
+            background-color: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 50px var(--glow-color);
+        }
+
+        /* Smooth intro text */
+        .intro-text {
+            font-size: 1.1rem;
+            color: #e5e7eb;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--accent-primary);
+            padding-left: 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+            border-radius: 3px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        li:hover::before {
+            transform: translateX(4px);
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* Highlight box for network sharing security */
+        .security-highlight {
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+            border: 1px solid rgba(129, 140, 248, 0.2);
+            padding: 24px;
+            border-radius: 16px;
+            margin: 25px 0;
+        }
+
+        .security-highlight h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .security-highlight p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        /* Contact section */
+        .contact-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding: 8px 24px;
+            background: rgba(129, 140, 248, 0.08);
+            border-radius: 30px;
+            border: 1px solid rgba(129, 140, 248, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            background: var(--accent-primary);
+            color: #0b0f19;
+            box-shadow: 0 0 20px rgba(129, 140, 248, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(156, 163, 175, 0.5);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        /* Responsive designs */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            .policy-card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .logo-text {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <!-- Wallet / Passive Earn Icon -->
+                        <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">PocketEarn</span>
+            </div>
+            <h1>Privacy Policy</h1>
+            <div class="date">Last Updated: June 21, 2026</div>
+
+            <div class="trust-badges">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Strictly Opt-In
+                </div>
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    GDPR & CCPA Compliant
+                </div>
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    100% Secured Traffic
+                </div>
+            </div>
+        </header>
+
+        <div class="policy-card">
+            <p class="intro-text">
+                Welcome to PocketEarn ("we", "our", or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile or desktop application (the "Application").
+            </p>
+
+            <section>
+                <h2>1. Information We Collect</h2>
+                <p>To provide our services and track your reward balance, we collect only the minimum required information:</p>
+                <ul>
+                    <li><strong>Account Credentials:</strong> Your registered email address and hashed password used to log in, secure your account, and track your balance.</li>
+                    <li><strong>Non-Personal Device Info:</strong> Device model, operating system version, and an anonymized device identifier to manage concurrent connections securely.</li>
+                    <li><strong>Bandwidth Statistics:</strong> The total volume of network bandwidth shared (measured in Gigabytes) to accurately calculate reward points.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Idle Bandwidth Sharing (P2P Network)</h2>
+                <p>PocketEarn integrates with trusted DePIN partners (such as Bright Data/EarnApp and Pawns.app) to allow you to monetize your device's idle internet connection.</p>
+                
+                <div class="security-highlight">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent-primary)">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                        </svg>
+                        Guaranteed Security & Privacy
+                    </h3>
+                    <p>Our network partners route only public web requests (such as price comparison and market research) through your connection. Your personal files, photos, emails, contacts, search history, and sensitive credentials are <strong>never accessed, read, or collected.</strong></p>
+                </div>
+
+                <ul>
+                    <li><strong>Explicit Consent:</strong> Bandwidth sharing is strictly <strong>opt-in</strong>. The application will never share data unless you explicitly enable it.</li>
+                    <li><strong>Complete Control:</strong> You can disable bandwidth sharing at any time. Simply toggle the "Earn Passively" switch to OFF in the settings, and all sharing will stop immediately.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the data we collect for limited operational purposes:</p>
+                <ul>
+                    <li>Creating and managing your user profile.</li>
+                    <li>Calculating and crediting reward points accurately based on bandwidth statistics.</li>
+                    <li>Processing cryptocurrency payouts directly to your public wallet address.</li>
+                    <li>Detecting and preventing fraudulent activity to protect network stability.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Data Security</h2>
+                <p>
+                    We employ industry-standard encryption and security measures to protect your account and stats. While we take every effort to secure your data, please be aware that no transmission over the internet can be guaranteed 100% secure.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. Third-Party Services</h2>
+                <p>
+                    Our app integrates third-party SDKs provided by verified network partners. These partners comply with global data protection regulations (including GDPR and CCPA) and do not access your personal device storage or personal information.
+                </p>
+            </section>
+
+            <section>
+                <h2>6. Payouts and Cryptocurrency</h2>
+                <p>
+                    Once you reach the minimum payout threshold, you can request a withdrawal in supported cryptocurrencies (USDT, BTC, LTC). You are solely responsible for providing the correct public wallet address. PocketEarn is not liable for transactions sent to incorrect wallet addresses provided by users.
+                </p>
+            </section>
+
+            <section>
+                <h2>7. Children's Privacy</h2>
+                <p>
+                    Our application is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we discover we have collected such data, we delete it immediately.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Changes to This Policy</h2>
+                <p>
+                    We may update our Privacy Policy periodically. We will notify you of any updates by posting the new policy on this page and updating the "Last Updated" date.
+                </p>
+            </section>
+
+            <section class="contact-box">
+                <h2>9. Contact Us</h2>
+                <p>If you have any questions, suggestions, or concerns regarding your privacy, please reach out to us at:</p>
+                <a href="mailto:pocketearn@inbox.ru" class="email-link">pocketearn@inbox.ru</a>
+            </section>
+        </div>
+
+        <footer>
+            &copy; 2026 PocketEarn. All rights reserved.
+        </footer>
+
+    </div>
+
+</body>
+</html>
